@@ -1,10 +1,9 @@
-# Ex.No: 12 Pytest Python program for Addition
+# Ex.No: 14 Pytest Python program for Fibonacci Series
 
-### DATE: 22/10/2024                                                                          
+### DATE: 05/11/2024                                                                          
 ### REGISTER NUMBER :  212222040013
 ### AIM: 
-To write a python program for addition of two numbers and test the test cases using
-Pytest.
+To write a python program for Fibonacci Series and test the test cases using Pytest.
 
 ### Algorithm:
 1. Write the python program for addition of two numbers
@@ -14,16 +13,20 @@ Pytest.
 
 ### Program:
 ```
-def add(a,b): 
-return a+b 
-def test_3_plus_5_equals_8(): 
-assert add(3,5) == 8 
-def test_2_plus_3_equals_5(): 
-assert add(2,3) == 6
+def fibR(n): 
+if n==1 or n==2: 
+return 1 
+return fibR(n-1)+fibR(n-2) 
+def test_fib_1_equals_1(): 
+assert fibR(1) == 1 
+def test_fib_2_equals_1(): 
+assert fibR(2) == 1 
+def test_fib_6_equals_8(): 
+assert fibR(6) == 7
 ```
 
 ### Output:
-![STLN](https://github.com/user-attachments/assets/d0106d73-6fde-4b40-af9f-b7150ef8b7b7)
+![STLNN](https://github.com/user-attachments/assets/b7a7612e-111d-4187-b4a8-e9d403e6209e)
 
 ### Result:
 Thus, the python program for addition is tested using pytest and executed and output is verified successfully.
