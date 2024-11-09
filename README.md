@@ -1,6 +1,6 @@
 # Ex.No: 12 Pytest Python program for Addition
 
-### DATE: 24/09/2024                                                                          
+### DATE: 22/10/2024                                                                          
 ### REGISTER NUMBER :  212222040013
 ### AIM: 
 To write a python program for addition of two numbers and test the test cases using
