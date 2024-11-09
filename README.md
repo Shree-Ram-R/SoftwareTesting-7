@@ -1,52 +1,29 @@
-# Ex.No: 7 Sorting. 
+# Ex.No: 12 Pytest Python program for Addition
 
 ### DATE: 24/09/2024                                                                          
 ### REGISTER NUMBER :  212222040013
 ### AIM: 
-Write a python program for sorting and inspect for failures. 
+To write a python program for addition of two numbers and test the test cases using
+Pytest.
+
 ### Algorithm:
-1. Start
-2. Get an input from the user by prompting 
-3. Run a loop form 0 to len/2.
-4. Check if the characters are the same both from the start and the end till len/2. 
-5. If it is, return the result that it is a palindrome.
-6. Else, return that it is not a palindrome. 
-7. Stop the program.
+1. Write the python program for addition of two numbers
+2. Make sure that function name should be “def test_*():” and the line to be tested should have assert keyword at the beginning
+3. Write some test cases for to be tested and save it as “test_add.py”.
+4. Open command prompt and change the directory to where pytest and program is saved and type “pytest test_add.py” and run it.
+
 ### Program:
 ```
- n=int(input("Enter the number of elements:"))  
-arr=[]  
-try:  
-     for i in range(n):  
-        a=float(input("Enter the element:"))  
-        arr.append(a)  
-        for i in range(n):  
-            for j in range(n):  
-                if(arr[i]<arr[j): 
-                              temp = arr[i] 
-                              arr[i] = arr[j] 
-                              arr[j] = temp 
-    print(“The array after sorting: ”) 
- for i in range(n): 
-     print(arr[i],end=’ ’) 
-except ValueError: 
-    print(“Enter a valid number”) 
+def add(a,b): 
+return a+b 
+def test_3_plus_5_equals_8(): 
+assert add(3,5) == 8 
+def test_2_plus_3_equals_5(): 
+assert add(2,3) == 6
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ### Output:
-![Screenshot 2024-11-08 142107](https://github.com/user-attachments/assets/1abbf75c-e29a-4ba9-b272-fa5182146343)
-
+![STLN](https://github.com/user-attachments/assets/d0106d73-6fde-4b40-af9f-b7150ef8b7b7)
 
 ### Result:
-Thus, a program to check palindrome has been written and test cases have been written and verified successfully.
+Thus, the python program for addition is tested using pytest and executed and output is verified successfully.
