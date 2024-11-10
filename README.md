@@ -1,32 +1,42 @@
-# Ex.No: 14 Pytest Python program for Fibonacci Series
+# Ex.No: 7 Sorting.
 
 ### DATE: 05/11/2024                                                                          
-### REGISTER NUMBER :  212222040013
+### REGISTER NUMBER :  212222040154
 ### AIM: 
-To write a python program for Fibonacci Series and test the test cases using Pytest.
+Write a python program for sorting and inspect for failures.
 
 ### Algorithm:
-1. Write the python program for addition of two numbers
-2. Make sure that function name should be “def test_*():” and the line to be tested should have assert keyword at the beginning
-3. Write some test cases for to be tested and save it as “test_add.py”.
-4. Open command prompt and change the directory to where pytest and program is saved and type “pytest test_add.py” and run it.
+1. Start
+2. Get an input from the user by prompting
+3. Run a loop form 0 to len/2.
+4. Check if the characters are the same both from the start and the end till len/2.
+5. If it is, return the result that it is a palindrome.
+6. Else, return that it is not a palindrome.
+7. Stop the program
 
 ### Program:
 ```
-def fibR(n): 
-if n==1 or n==2: 
-return 1 
-return fibR(n-1)+fibR(n-2) 
-def test_fib_1_equals_1(): 
-assert fibR(1) == 1 
-def test_fib_2_equals_1(): 
-assert fibR(2) == 1 
-def test_fib_6_equals_8(): 
-assert fibR(6) == 7
+n=int(input("Enter the number of elements:"))
+arr=[]
+try:
+for i in range(n):
+a=float(input("Enter the element:"))
+arr.append(a)
+for i in range(n):
+for j in range(n):
+if(arr[i]<arr[j):
+temp = arr[i]
+arr[i] = arr[j]
+arr[j] = temp
+print(“The array after sorting: ”)
+for i in range(n):
+print(arr[i],end=’ ’)
+except ValueError:
+print(“Enter a valid number”)
 ```
 
 ### Output:
-![STLNN](https://github.com/user-attachments/assets/b7a7612e-111d-4187-b4a8-e9d403e6209e)
+![ex77](https://github.com/user-attachments/assets/39e4c781-e922-4c3c-9f6e-07609bd9d074)
 
 ### Result:
-Thus, the python program for addition is tested using pytest and executed and output is verified successfully.
+Thus, a program to check palindrome has been written and test cases have been written and verified successfully
